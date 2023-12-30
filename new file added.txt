@@ -1,1 +1,18 @@
 this file is added in remote to perfome the pull request to pull the remote repo ( new added file ) to local.
+
+
+
+pulled the remote file to local through pull " git pull "
+PS D:\sathish_GIT\MyRepo> git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 640 bytes | 4.00 KiB/s, done.
+From https://github.com/sathish-sugumar/MyRepo
+   f8c2b10..70da457  main       -> origin/main
+Updating f8c2b10..70da457
+Fast-forward
+ new file added.text => new file added.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename new file added.text => new file added.txt (100%)
