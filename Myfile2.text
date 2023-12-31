@@ -1,0 +1,50 @@
+adding new Myfile2  added in Myrepo  getting below error due to file is been untracked 
+( not added to staging area)
+
+
+PS D:\sathish_GIT\MyRepo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Myfile2.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+ move to staging area through " git add " and got the status as below 
+
+PS D:\sathish_GIT\MyRepo> git add  Myfile2.text
+PS D:\sathish_GIT\MyRepo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Myfile2.text
+
+
+moving the Myfile2.text file to local git folder ( copy of remote git repo) thorugh "git commit -m "comments "
+PS D:\sathish_GIT\MyRepo>  git commit -m "added myfile 2"                           
+[main 1603c25] added myfile 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Myfile2.text
+PS D:\sathish_GIT\MyRepo> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+moving to remote repo through git push origin main 
+
+PS D:\sathish_GIT\MyRepo> git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 6.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sathish-sugumar/MyRepo.git
+   01b326b..1603c25  main -> main

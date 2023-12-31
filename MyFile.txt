@@ -7,5 +7,7 @@ git config --global user.name"username"
 
 git config --global user.email"mail"
 
+moving the Myfile2.text file to local git folder ( copy of remote git repo) thorugh "git commit"comments "
+
 
 
